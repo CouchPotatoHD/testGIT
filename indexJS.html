@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+/*
+let catet1 = prompt("Укажите длинну первого катета:");
+let catet2 = prompt("Укажите длинну второго катета:");
+
+alert("Гипотенуза равна :" + pifagorTheorema(catet1, catet2))
+
+function pifagorTheorema (catet1, catet2) {
+
+    let gipotenuza = Math.sqrt(catet1 * catet1 + catet2 * catet2)
+
+    return gipotenuza
+}
+*/
+
+/*
+let countryArr = [
+    [1,'Egypt'], 
+    [2,'Turkey'], 
+    [3,'Bulgaria']
+];
+
+createTour(0, 5, countryArr[0])
+createTour(10, 4, countryArr[0])
+createTour(4, 4, countryArr[0])
+
+function createTour (peopleCount, dayCount = 7, country) {
+
+    let oneDayPrice;
+    let wholeTourPriceWoDs;
+    let wholeTourPrice;
+    let minimalDayCount = 5;
+    let discount = 10;
+
+    if (peopleCount == 0) {
+        return alert('You cannot travel with ' +  peopleCount + ' people')
+    }
+
+    if (dayCount < minimalDayCount) {
+        return alert('You cannot travel on less than ' + minimalDayCount + ' days')
+    }
+
+        if (country[0] == 1) {
+            oneDayPrice = 120;
+        }
+        else if (country[0] == 2) {
+            oneDayPrice = 130;
+        }
+        else if (country[0] == 3) {
+            oneDayPrice = 140;
+        }
+
+    wholeTourPriceWoDs = oneDayPrice * dayCount * peopleCount;
+
+    if (dayCount > 10) {
+        wholeTourPrice = wholeTourPriceWoDs - wholeTourPriceWoDs/100 * discount;
+    }
+    else{
+        wholeTourPrice = wholeTourPriceWoDs;
+    }
+
+    return alert ('For ' + peopleCount + ' people the tour price to ' + country[1] + ' for ' + dayCount +' days is ' + wholeTourPrice)
+
+}
+*/
+/*
+let matrix = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+
+fillPageWMatrixRegular(matrix);
+document.write('<br/>')
+fillPageWMatrixHorizontalReverse(matrix);
+document.write('<br/>')
+fillPageWMatrixVerticalReverse(matrix);
+document.write('<br/>')
+fillPageWMatrixUpsideDown(matrix);
+
+function fillPageWMatrixRegular(matrix) {
+
+    for (let i = 0; i < matrix.length; i++) {
+
+        for (let j = 0; j < 3; j++) {
+        document.write(matrix[i][j])
+    }
+
+    document.write('<br/>')
+
+    }
+
+}
+
+function fillPageWMatrixHorizontalReverse(matrix) {
+
+for (let i = 0; i < matrix.length; i++) {
+
+    for (let j = 2; j > -1; j--) {
+    document.write(matrix[i][j])
+}
+
+document.write('<br/>')
+
+}
+
+}
+
+function fillPageWMatrixVerticalReverse(matrix) {
+
+for (let i = 0; i < matrix.length; i++) {
+
+    for (let j = 0; j < 3; j++) {
+    document.write(matrix[j][i])
+}
+
+document.write('<br/>')
+
+}
+
+}
+
+function fillPageWMatrixUpsideDown (matrix) {
+
+for (let i = 2; i > -1; i--) {
+
+for (let j = 0; j < 3; j++) {
+document.write(matrix[j][i])
+}
+document.write('<br/>')
+}
+}
+*/
+
+
+function clickOnMagicalBall () {
+
+    let phraseArr = [
+        [0,'Успех!'],
+        [1,'Нет'],
+        [2,'Да'],
+        [3,'Возможно'],
+        [4,'Маловероятно'],
+        [5,'Шансы ничтожны'],
+        [6,'Скорее да чем нет'],
+        [7,'Он(а) тебя не любит'],
+        [8,'ЗП не повысят'],
+        [9,'Будешь работать на одну зарплату'],
+        [10,'Биток 100 тысяч к концу года']
+        ];
+
+    let returnPhrase;
+
+    let maxNumber = 11;
+
+    let randomNumber = Math.floor(Math.random() * maxNumber)
+
+    returnPhrase = phraseArr[randomNumber][1];
+
+    return returnPhrase;
+}
+
+document.write(clickOnMagicalBall())
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
